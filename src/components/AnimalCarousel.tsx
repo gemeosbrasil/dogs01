@@ -14,19 +14,19 @@ const AnimalCarousel = () => {
     {
       id: 2,
       name: "Luna",
-      image: "https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "https://vakinhas.me/wp-content/uploads/2025/05/Vakinhas.me-Instituto-Socorro-Animal-Salve-o-Instituto-07.webp",
       story: "Luna chegou até nós muito machucada após sofrer maus-tratos. Hoje ela está se recuperando e mostrando que o amor pode curar qualquer ferida."
     },
     {
       id: 3,
       name: "Thor",
-      image: "https://images.pexels.com/photos/1420405/pexels-photo-1420405.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "https://vakinhas.me/wp-content/uploads/2025/05/Vakinhas.me-Instituto-Socorro-Animal-Salve-o-Instituto-15.webp",
       story: "Thor foi encontrado abandonado e desnutrido. Com muito carinho e tratamento, ele está se tornando um cãozinho alegre e cheio de vida."
     },
     {
       id: 4,
       name: "Bella",
-      image: "https://images.pexels.com/photos/1490908/pexels-photo-1490908.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "https://vakinhas.me/wp-content/uploads/2025/05/Vakinhas.me-Instituto-Socorro-Animal-Salve-o-Instituto-09.webp",
       story: "Bella estava em situação de extrema negligência quando a encontramos. Hoje ela está se recuperando e mostrando sua personalidade doce."
     }
   ];
