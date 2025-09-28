@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { AlertTriangle, Heart, Clock } from 'lucide-react';
 
 const UrgentSection = () => {
+  const [playVideo, setPlayVideo] = useState(false);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -48,6 +50,36 @@ const UrgentSection = () => {
                 Ajude-nos a continuar salvando animais vítimas de maus-tratos. Cada doação é uma chance de 
                 recomeço para um animal que já sofreu demais.
               </p>
+            </div>
+
+            {/* Vídeo com Thumb Fake */}
+            <div className="relative overflow-hidden pb-[56.25%] mb-8 rounded-2xl shadow-xl">
+              {!playVideo ? (
+                <div 
+                  className="absolute top-0 left-0 w-full h-full flex items-center justify-center cursor-pointer group" 
+                  onClick={() => setPlayVideo(true)}
+                >
+                  {/* Thumbnail do YouTube */}
+                  <img 
+                    src="https://img.youtube.com/vi/7jNvjZhcrTk/maxresdefault.jpg" 
+                    alt="Thumbnail do vídeo"
+                    className="w-full h-full object-cover rounded-2xl group-hover:brightness-75 transition"
+                  />
+                  {/* Botão Play */}
+                  <div className="absolute bg-red-600 text-white rounded-full p-4 shadow-lg group-hover:scale-110 transition">
+                    ▶
+                  </div>
+                </div>
+              ) : (
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full rounded-2xl"
+                  src="https://www.youtube.com/embed/7jNvjZhcrTk?autoplay=1"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              )}
             </div>
 
             {/* Situation Cards */}
