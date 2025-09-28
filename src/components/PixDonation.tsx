@@ -3,7 +3,7 @@ import { Copy, Check, QrCode } from 'lucide-react';
 
 const PixDonation = () => {
   const [copied, setCopied] = useState(false);
-  const pixKey = "PIXDOBEM@VAKINHAS.ME";
+  const pixKey = "PIXSALVEVIDAS@GMAIL.COM";
 
   const copyPixKey = () => {
     navigator.clipboard.writeText(pixKey);
@@ -31,7 +31,7 @@ const PixDonation = () => {
                 <QrCode className="h-12 w-12 text-green-600" />
               </div>
               <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                💳 Doe com qualquer valor pela nossa chave PIX:
+                Doe com qualquer valor pela nossa chave PIX:
               </h3>
             </div>
 
@@ -107,7 +107,7 @@ const PixDonation = () => {
             {/* Security Info */}
             <div className="mt-6 text-center">
               <p className="text-sm text-gray-600">
-                🔒 PIX é seguro, instantâneo e gratuito • Patas & Corações - CNPJ: 12.345.678/0001-90
+                🔒 PIX é seguro, instantâneo e gratuito • Patas & Corações - CNPJ: 32.354.678/0001-90
               </p>
             </div>
           </div>
