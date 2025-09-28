@@ -1,15 +1,36 @@
-<div className="flex items-center space-x-3 cursor-pointer" onClick={() => scrollToSection('hero')}>
-  <img
-    src="https://i.imgur.com/lIskwdl.png"
-    alt="Patas & Corações"
-    className="h-12 w-12 object-contain"
-  />
-  <div>
-    <h1 className="text-xl font-bold text-gray-800">Patas & Corações</h1>
-    <p className="text-xs text-gray-600">ONG de Resgate</p>
-  </div>
-</div>
+import React, { useState } from 'react';
+import { Menu, X } from 'lucide-react';
 
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMenuOpen(false);
+  };
+
+  return (
+    <header className="bg-white shadow-lg sticky top-0 z-50 transition-all duration-300">
+      <div className="container mx-auto px-4 py-3">
+        <div className="flex justify-between items-center">
+          {/* Logo */}
+          <div
+            className="flex items-center space-x-3 cursor-pointer"
+            onClick={() => scrollToSection('hero')}
+          >
+            <img
+              src="https://i.imgur.com/lIskwdl.png"
+              alt="Patas & Corações"
+              className="h-12 w-12 object-contain"
+            />
+            <div>
+              <h1 className="text-xl font-bold text-gray-800">Patas & Corações</h1>
+              <p className="text-xs text-gray-600">ONG de Resgate</p>
+            </div>
+          </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
@@ -20,7 +41,7 @@
               { name: 'Histórias', id: 'stories' },
               { name: 'Sobre', id: 'about' },
               { name: 'Doar PIX', id: 'pix' },
-              { name: 'Contato', id: 'contact' }
+              { name: 'Contato', id: 'contact' },
             ].map((item) => (
               <button
                 key={item.name}
@@ -59,7 +80,7 @@
               { name: 'Histórias', id: 'stories' },
               { name: 'Sobre', id: 'about' },
               { name: 'Doar PIX', id: 'pix' },
-              { name: 'Contato', id: 'contact' }
+              { name: 'Contato', id: 'contact' },
             ].map((item) => (
               <button
                 key={item.name}
