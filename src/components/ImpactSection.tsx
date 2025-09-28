@@ -3,10 +3,10 @@ import { DollarSign, Heart, Stethoscope, Home } from 'lucide-react';
 
 const ImpactSection = () => {
   const impacts = [
-    { amount: 'R$ 10,00', description: 'Alimenta 1 animal por uma semana!', icon: Heart, color: 'from-green-400 to-green-600' },
-    { amount: 'R$ 30,00', description: 'Ração e Medicamentos básicos para 2 animais por 10 dias!', icon: Stethoscope, color: 'from-blue-400 to-blue-600' },
-    { amount: 'R$ 75,00', description: 'Compra um 1 saco de ração de 10kg que alimenta 5 animais por um mês!', icon: DollarSign, color: 'from-purple-400 to-purple-600' },
-    { amount: 'R$ 150,00', description: 'Cobre vacinas e vermífugos para 4 animais resgatados!', icon: Heart, color: 'from-orange-400 to-orange-600' },
+    { amount: 'R$ 10,00', description: 'Alimenta 1 animal por uma dia!', icon: Heart, color: 'from-green-400 to-green-600' },
+    { amount: 'R$ 30,00', description: 'Ração e Medicamentos básicos para 2 animais por 2 dias!', icon: Stethoscope, color: 'from-blue-400 to-blue-600' },
+    { amount: 'R$ 75,00', description: 'Compra um 1 saco de ração de 10kg que alimenta 8 animais por uma semana!', icon: DollarSign, color: 'from-purple-400 to-purple-600' },
+    { amount: 'R$ 150,00', description: 'Cobre vacinas e vermífugos para 3 animais resgatados!', icon: Heart, color: 'from-orange-400 to-orange-600' },
     { amount: 'R$ 350,00', description: 'Oferece tratamento veterinário completo por um mês para 3 animais', icon: Stethoscope, color: 'from-red-400 to-red-600' },
     { amount: 'R$ 750,00', description: 'Cobre cirurgias de emergência e recuperação de animais em estados críticos', icon: Home, color: 'from-indigo-400 to-indigo-600' }
   ];
