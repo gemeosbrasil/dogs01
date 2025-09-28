@@ -36,8 +36,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-xl text-gray-600 leading-relaxed max-w-lg mt-6">
-            Nossos animais resgatados estão há mais de 3 dias sem alimentos. Cada
-            doação, por menor que seja, pode significar uma refeição a mais.
+            Nosso abrigo salva vidas todos os dias, mas está com dificuldades para manter o cuidado dos animais resgatados. Muitos dependem da sua ajuda urgente. Doe qualquer valor e transforme uma vida hoje!
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
