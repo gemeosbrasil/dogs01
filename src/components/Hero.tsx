@@ -62,10 +62,6 @@ const Hero = () => {
               </div>
               <div className="text-sm text-gray-600">Resgatados de Canil</div>
             </div>
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-red-500">3</div>
-              <div className="text-sm text-gray-600">Dias sem Comida</div>
-            </div>
           </div>
 
           {/* Scroll Indicator – colocado dentro do mesmo container para não quebrar o JSX */}
