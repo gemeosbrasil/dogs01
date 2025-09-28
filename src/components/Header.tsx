@@ -24,7 +24,7 @@ const Header = () => {
             <img
               src="https://i.imgur.com/lIskwdl.png"
               alt="Patas & Corações"
-              className="h-16 w-16 object-contain"
+              className="h-20 w-20 object-contain"
             />
             <div>
               <h1 className="text-xl font-bold text-gray-800">Patas & Corações</h1>
