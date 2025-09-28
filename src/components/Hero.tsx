@@ -60,7 +60,7 @@ const Hero = () => {
               <div className="text-2xl md:text-3xl font-bold text-blue-500">
                 132
               </div>
-              <div className="text-sm text-gray-600">Resgatados de Canil</div>
+              <div className="text-sm text-gray-600">Resgatados de Canis clandestinos</div>
             </div>
           </div>
 
@@ -77,9 +77,9 @@ const Hero = () => {
 
         {/* Hero Image */}
         <div className="relative animate-fadeInRight">
-          <div className="relative rounded-2xl overflow-hidden shadow-2xl transform rotate-3 hover:rotate-0 transition-all duration-500">
+          <div className="relative rounded-2xl overflow-hidden shadow-2xl transform  hover:rotate-0 transition-all duration-500">
             <img
-              src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src="https://i.imgur.com/eSoyc7c.png"
               alt="Cachorro resgatado feliz"
               className="w-full h-96 lg:h-[500px] object-cover"
             />
