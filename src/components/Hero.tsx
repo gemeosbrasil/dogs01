@@ -1,16 +1,19 @@
-import React from 'react';
-import { ArrowDown, Play } from 'lucide-react';
+import React from "react";
+import { ArrowDown, Play } from "lucide-react";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
-    <section id="hero" className="relative min-h-screen bg-gradient-to-br from-green-50 via-white to-blue-50 overflow-hidden">
+    <section
+      id="hero"
+      className="relative min-h-screen bg-gradient-to-br from-green-50 via-white to-blue-50 overflow-hidden flex items-center"
+    >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-20 h-20 rounded-full bg-green-500"></div>
@@ -18,80 +21,88 @@ const Hero = () => {
         <div className="absolute bottom-20 left-1/4 w-12 h-12 rounded-full bg-green-500"></div>
       </div>
 
-      <div className="container mx-auto px-4 py-20 relative z-10">
+      {/* Conteúdo principal */}
+      <div className="container mx-auto px-4 py-20 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        {/* Texto */}
+        <div>
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-800 leading-tight">
+            Salve uma
+            <span className="bg-gradient-to-r from-green-500 to-green-700 bg-clip-text text-transparent">
+              {" "}
+              vida
+            </span>
+            <br />
+            agora mesmo
+          </h1>
 
-            
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-800 leading-tight">
-              Salve uma
-              <span className="bg-gradient-to-r from-green-500 to-green-700 bg-clip-text text-transparent"> vida</span>
-              <br />
-              agora mesmo
-            </h1>
+          <p className="text-xl text-gray-600 leading-relaxed max-w-lg mt-6">
+            Nossos animais resgatados estão há mais de 3 dias sem alimentos. Cada
+            doação, por menor que seja, pode significar uma refeição a mais.
+          </p>
 
-            <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
-              Nossos animais resgatados estão há mais de 3 dias sem alimentos. Cada doação, por menor que seja, pode significar uma refeição a mais.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button
-                onClick={() => scrollToSection('pix')}
-                className="bg-gradient-to-r from-green-400 to-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-green-500 hover:to-green-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-              >
-                Doar via PIX
-              </button>
-            </div>
-
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-4 pt-8 border-t border-gray-200">
-              <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-green-500">600+</div>
-                <div className="text-sm text-gray-600">Animais Resgatados</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-blue-500">132</div>
-                <div className="text-sm text-gray-600">Resgatados de Canil</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-red-500">3</div>
-                <div className="text-sm text-gray-600">Dias sem Comida</div>
-              </div>
-            </div>
+          <div className="flex flex-col sm:flex-row gap-4 mt-8">
+            <button
+              onClick={() => scrollToSection("pix")}
+              className="bg-gradient-to-r from-green-400 to-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-green-500 hover:to-green-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            >
+              Doar via PIX
+            </button>
           </div>
 
-          {/* Hero Image */}
-          <div className="relative animate-fadeInRight">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl transform rotate-3 hover:rotate-0 transition-all duration-500">
-              <img
-                src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Cachorro resgatado feliz"
-                className="w-full h-96 lg:h-[500px] object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-              <div className="absolute bottom-6 left-6 text-white">
-                <h3 className="text-xl font-semibold">Max</h3>
-                <p className="text-sm opacity-90">Resgatado e adotado ❤️</p>
+          {/* Stats */}
+          <div className="grid grid-cols-3 gap-4 pt-8 border-t border-gray-200 mt-8">
+            <div className="text-center">
+              <div className="text-2xl md:text-3xl font-bold text-green-500">
+                600+
               </div>
+              <div className="text-sm text-gray-600">Animais Resgatados</div>
             </div>
-
-            {/* Floating Elements */}
-            <div className="absolute -top-4 -right-4 bg-red-500 text-white p-4 rounded-full shadow-lg animate-bounce">
-              <span className="text-2xl">🐕</span>
+            <div className="text-center">
+              <div className="text-2xl md:text-3xl font-bold text-blue-500">
+                132
+              </div>
+              <div className="text-sm text-gray-600">Resgatados de Canil</div>
             </div>
-            <div className="absolute -bottom-4 -left-4 bg-green-500 text-white p-4 rounded-full shadow-lg animate-pulse">
-              <span className="text-2xl">❤️</span>
+            <div className="text-center">
+              <div className="text-2xl md:text-3xl font-bold text-red-500">3</div>
+              <div className="text-sm text-gray-600">Dias sem Comida</div>
             </div>
           </div>
         </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <button
-            onClick={() => scrollToSection('animals')}
-            className="bg-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-          >
-            <ArrowDown className="h-6 w-6 text-gray-600" />
-          </button>
+        {/* Hero Image */}
+        <div className="relative animate-fadeInRight">
+          <div className="relative rounded-2xl overflow-hidden shadow-2xl transform rotate-3 hover:rotate-0 transition-all duration-500">
+            <img
+              src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Cachorro resgatado feliz"
+              className="w-full h-96 lg:h-[500px] object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+            <div className="absolute bottom-6 left-6 text-white">
+              <h3 className="text-xl font-semibold">Max</h3>
+              <p className="text-sm opacity-90">Resgatado e adotado ❤️</p>
+            </div>
+          </div>
+
+          {/* Floating Elements */}
+          <div className="absolute -top-4 -right-4 bg-red-500 text-white p-4 rounded-full shadow-lg animate-bounce">
+            <span className="text-2xl">🐕</span>
+          </div>
+          <div className="absolute -bottom-4 -left-4 bg-green-500 text-white p-4 rounded-full shadow-lg animate-pulse">
+            <span className="text-2xl">❤️</span>
+          </div>
         </div>
+      </div>
+
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <button
+          onClick={() => scrollToSection("animals")}
+          className="bg-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+        >
+          <ArrowDown className="h-6 w-6 text-gray-600" />
+        </button>
       </div>
     </section>
   );
