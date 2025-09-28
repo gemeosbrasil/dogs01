@@ -26,7 +26,7 @@ const AnimalCarousel = () => {
     {
       id: 4,
       name: "Bella",
-      image: "https://vakinhas.me/wp-content/uploads/2025/05/Vakinhas.me-Instituto-Socorro-Animal-Salve-o-Instituto-09.webp",
+      image: "https://vakinhas.me/wp-content/uploads/2025/05/Vakinhas.me-Instituto-Socorro-Animal-Salve-o-Instituto-12.webp",
       story: "Bella estava em situação de extrema negligência quando a encontramos. Hoje ela está se recuperando e mostrando sua personalidade doce."
     }
   ];
