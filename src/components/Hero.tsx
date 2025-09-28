@@ -83,8 +83,33 @@ const Hero = () => {
               alt="Cachorro resgatado feliz"
               className="w-full h-96 lg:h-[500px] object-cover"
             />
+  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+            <div className="absolute bottom-6 left-6 text-white">
+              <h3 className="text-xl font-semibold">Max</h3>
+              <p className="text-sm opacity-90">Resgatado e adotado ❤️</p>
+            </div>
+          </div>
 
-  
+          {/* Floating Elements */}
+          <div className="absolute -top-4 -right-4 bg-red-500 text-white p-4 rounded-full shadow-lg animate-bounce">
+            <span className="text-2xl">🐕</span>
+          </div>
+          <div className="absolute -bottom-4 -left-4 bg-green-500 text-white p-4 rounded-full shadow-lg animate-pulse">
+            <span className="text-2xl">❤️</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <button
+          onClick={() => scrollToSection("animals")}
+          className="bg-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+        >
+          <ArrowDown className="h-6 w-6 text-gray-600" />
+        </button>
+      </div>
+    </section>
   );
 };
 
