@@ -63,27 +63,19 @@ const Hero = () => {
               <div className="text-sm text-gray-600">Resgatados de Canis clandestinos</div>
             </div>
           </div>
-
-          {/* Scroll Indicator – colocado dentro do mesmo container para não quebrar o JSX */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <button
-              onClick={() => scrollToSection("animals")}
-              className="bg-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              <ArrowDown className="h-6 w-6 text-gray-600" />
-            </button>
-          </div>
         </div>
 
         {/* Hero Image */}
         <div className="relative animate-fadeInRight">
-          <div className="relative rounded-2xl overflow-hidden shadow-2xl transform  hover:rotate-0 transition-all duration-500">
+          <div className="relative rounded-2xl overflow-hidden shadow-2xl transform hover:rotate-0 transition-all duration-500">
             <img
               src="https://i.imgur.com/eSoyc7c.png"
               alt="Cachorro resgatado feliz"
               className="w-full h-96 lg:h-[500px] object-cover"
             />
-  
+          </div>
+        </div>
+      </div>
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
