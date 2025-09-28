@@ -4,13 +4,13 @@ const AnimalStories = () => {
   const stories = [
     {
       name: "Noah",
-      image: "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "https://vakinhas.me/wp-content/uploads/2025/05/Vakinhas.me-Instituto-Socorro-Animal-Salve-o-Instituto-06.webp",
       story: "Fui resgatado após a casa dos meus tutores pegar fogo, eu vivia acorrentado, junto com outro amigo, consegui escapar no meio do incêndio, mas ele não 😞 Tive metade do corpo queimado, queimaduras graves nas costas, ferimentos nas patinhas, coxins queimados. Tinha muita dor e febre alta quando cheguei na clínica. Também estava com problemas de pele, sinais de dermatite crônica e possivelmente sarna com feridas abertas no pescoço. As tias terão muito custo com meu tratamento, além da internação, medicamentos fortes, sedação constante para curativos e alimentação especial, você pode ajudar?",
       subtitle: "Noah foi resgatado após sua casa pegar fogo."
     },
     {
       name: "Victor",
-      image: "https://images.pexels.com/photos/1490908/pexels-photo-1490908.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "https://vakinhas.me/wp-content/uploads/2025/05/Vakinhas.me-Instituto-Socorro-Animal-Salve-o-Instituto-14.webp",
       story: "Fui resgatado após ser atropelado em uma rodovia, estava com muita dor e não conseguia levantar, as tias do Instituto pediram pra uma tia veterinária ir junto me buscar para eu ser medicado logo. Eu estava com muitas escoriações pelo corpo, com a temperatura baixa e saía sangue no meu xixi. Após os exames de imagem, as tias viram que tinha uma fratura na minha coluna e múltiplas fraturas na pelve e quadril. Vou precisar de duas cirurgias delicadas.",
       subtitle: "Victor foi resgatado após ser encontrado atropelado na rodovia"
     }
@@ -62,7 +62,7 @@ const AnimalStories = () => {
               {index < stories.length - 1 && (
                 <div className="mt-16 text-center">
                   <img
-                    src="https://images.pexels.com/photos/4498151/pexels-photo-4498151.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    src="https://vakinhas.me/wp-content/uploads/2025/05/Vakinhas.me-Instituto-Socorro-Animal-Salve-o-Instituto-03.webp"
                     alt="Separador"
                     className="w-full max-w-2xl mx-auto h-64 object-cover rounded-2xl shadow-lg"
                   />
