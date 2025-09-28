@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowDown, Play } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -36,7 +36,8 @@ const Hero = () => {
           </h1>
 
           <p className="text-xl text-gray-600 leading-relaxed max-w-lg mt-6">
-         Nosso abrigo salva vidas todos os dias, mas está com dificuldades para manter o cuidado dos animais resgatados. Muitos dependem da sua ajuda urgente. Doe qualquer valor e transforme uma vida hoje!
+            Nossos animais resgatados estão há mais de 3 dias sem alimentos. Cada
+            doação, por menor que seja, pode significar uma refeição a mais.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
@@ -62,11 +63,25 @@ const Hero = () => {
               </div>
               <div className="text-sm text-gray-600">Resgatados de Canil</div>
             </div>
+            <div className="text-center">
+              <div className="text-2xl md:text-3xl font-bold text-red-500">3</div>
+              <div className="text-sm text-gray-600">Dias sem Comida</div>
+            </div>
+          </div>
+
+          {/* Scroll Indicator – colocado dentro do mesmo container para não quebrar o JSX */}
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <button
+              onClick={() => scrollToSection("animals")}
+              className="bg-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+            >
+              <ArrowDown className="h-6 w-6 text-gray-600" />
+            </button>
           </div>
         </div>
 
         {/* Hero Image */}
-       
+        <div className="relative animate-fadeInRight">
           <div className="relative rounded-2xl overflow-hidden shadow-2xl transform rotate-3 hover:rotate-0 transition-all duration-500">
             <img
               src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=800"
@@ -88,16 +103,6 @@ const Hero = () => {
             <span className="text-2xl">❤️</span>
           </div>
         </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <button
-          onClick={() => scrollToSection("animals")}
-          className="bg-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-        >
-          <ArrowDown className="h-6 w-6 text-gray-600" />
-        </button>
       </div>
     </section>
   );
