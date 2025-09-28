@@ -8,7 +8,7 @@ const AnimalCarousel = () => {
     {
       id: 1,
       name: "Max",
-      image: "https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "https://vakinhas.me/wp-content/uploads/2025/05/Vakinhas.me-Instituto-Socorro-Animal-Salve-o-Instituto-19.webp",
       story: "Resgatado das ruas em estado crítico, Max está se recuperando e precisa de cuidados especiais. Sua força de vontade inspira toda nossa equipe."
     },
     {
