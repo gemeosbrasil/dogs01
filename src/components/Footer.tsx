@@ -30,7 +30,7 @@ const Footer = () => {
   const socialLinks = [
     { icon: Instagram, name: "@patascoracoes", color: "hover:text-pink-400" },
     { icon: Facebook, name: "Patas & Corações", color: "hover:text-blue-400" },
-    { icon: MessageCircle, name: "(11) 99999-9999", color: "hover:text-green-400" }
+    { icon: MessageCircle, name: "(11) 99854-7887", color: "hover:text-green-400" }
   ];
 
   return (
@@ -107,7 +107,7 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-orange-400 mt-1 flex-shrink-0" />
                 <div className="text-gray-300 text-sm">
-                  <p>Rua das Flores, 123</p>
+                  <p>Rua das Flores, 1867</p>
                   <p>Jardim Esperança</p>
                   <p>São Paulo, SP</p>
                 </div>
@@ -115,8 +115,8 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-orange-400 flex-shrink-0" />
                 <div className="text-gray-300 text-sm">
-                  <p>(11) 99999-9999</p>
-                  <p>(11) 3333-3333</p>
+                  <p>(11) 99854-7887</p>
+                  <p>(11) 3322-5784</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
@@ -183,8 +183,8 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 text-sm text-center md:text-left">
-              <p>© 2024 Patas & Corações ONG. Todos os direitos reservados.</p>
-              <p className="mt-1">CNPJ: 12.345.678/0001-90 | Certificada como ONG</p>
+              <p>© 2025 Patas & Corações ONG. Todos os direitos reservados.</p>
+              <p className="mt-1">CNPJ:  32.354.678/0001-90 | Certificada como ONG</p>
             </div>
             <div className="flex items-center space-x-6 text-sm">
               <button className="text-gray-400 hover:text-orange-400 transition-colors">
