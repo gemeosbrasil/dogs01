@@ -26,9 +26,8 @@ const Hero = () => {
         {/* Texto */}
         <div>
           <h1 className="text-4xl md:text-6xl font-bold text-gray-800 leading-tight">
-            Salve uma
+            Salve uma{" "}
             <span className="bg-gradient-to-r from-green-500 to-green-700 bg-clip-text text-transparent">
-              {" "}
               vida
             </span>
             <br />
@@ -36,7 +35,9 @@ const Hero = () => {
           </h1>
 
           <p className="text-xl text-gray-600 leading-relaxed max-w-lg mt-6">
-            Nosso abrigo salva vidas todos os dias, mas está com dificuldades para manter o cuidado dos animais resgatados. Muitos dependem da sua ajuda urgente. Doe qualquer valor e transforme uma vida hoje!
+            Nosso abrigo salva vidas todos os dias, mas está com dificuldades
+            para manter o cuidado dos animais resgatados. Muitos dependem da sua
+            ajuda urgente. Doe qualquer valor e transforme uma vida hoje!
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
@@ -49,28 +50,33 @@ const Hero = () => {
           </div>
 
           {/* Stats */}
-<div className="grid grid-cols-3 gap-4 pt-8 border-t border-gray-200 mt-8">
-  <div className="text-center">
-    <div className="text-2xl md:text-3xl font-bold text-green-500">
-      600+
-    </div>
-    <div className="text-sm text-gray-600">Animais Resgatados</div>
-  </div>
+          <div className="grid grid-cols-3 gap-4 pt-8 border-t border-gray-200 mt-8">
+            <div className="text-center">
+              <div className="text-2xl md:text-3xl font-bold text-green-500">
+                600+
+              </div>
+              <div className="text-sm text-gray-600">Animais Resgatados</div>
+            </div>
 
-  <div className="text-center">
-    <div className="text-2xl md:text-3xl font-bold text-blue-500">
-      132
-    </div>
-    <div className="text-sm text-gray-600">Resgatados de Canis clandestinos</div>
-  </div>
+            <div className="text-center">
+              <div className="text-2xl md:text-3xl font-bold text-blue-500">
+                132
+              </div>
+              <div className="text-sm text-gray-600">
+                Resgatados de Canis clandestinos
+              </div>
+            </div>
 
-  <div className="text-center">
-    <div className="text-2xl md:text-3xl font-bold text-purple-500">
-      20
-    </div>
-    <div className="text-sm text-gray-600">anos resgatando e cuidando de vidas</div>
-  </div>
-</div>
+            <div className="text-center">
+              <div className="text-2xl md:text-3xl font-bold text-purple-500">
+                20
+              </div>
+              <div className="text-sm text-gray-600">
+                anos resgatando e cuidando de vidas
+              </div>
+            </div>
+          </div>
+        </div>
 
         {/* Hero Image */}
         <div className="relative animate-fadeInRight">
