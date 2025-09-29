@@ -49,26 +49,28 @@ const Hero = () => {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-4 pt-8 border-t border-gray-200 mt-8">
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-green-500">
-                600+
-              </div>
-              <div className="text-sm text-gray-600">Animais Resgatados</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-blue-500">
-                132
-              </div>
-              <div className="text-sm text-gray-600">Resgatados de Canis clandestinos</div>
-            </div>
-          <div className="text-center">
-  <div className="text-2xl md:text-3xl font-bold text-purple-500">
-    20
+<div className="grid grid-cols-3 gap-4 pt-8 border-t border-gray-200 mt-8">
+  <div className="text-center">
+    <div className="text-2xl md:text-3xl font-bold text-green-500">
+      600+
+    </div>
+    <div className="text-sm text-gray-600">Animais Resgatados</div>
   </div>
-  <div className="text-sm text-gray-600">anos resgatando e cuidando de vidas</div>
+
+  <div className="text-center">
+    <div className="text-2xl md:text-3xl font-bold text-blue-500">
+      132
+    </div>
+    <div className="text-sm text-gray-600">Resgatados de Canis clandestinos</div>
+  </div>
+
+  <div className="text-center">
+    <div className="text-2xl md:text-3xl font-bold text-purple-500">
+      20
+    </div>
+    <div className="text-sm text-gray-600">anos resgatando e cuidando de vidas</div>
+  </div>
 </div>
-        </div>
 
         {/* Hero Image */}
         <div className="relative animate-fadeInRight">
