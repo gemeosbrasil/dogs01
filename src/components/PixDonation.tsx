@@ -64,6 +64,11 @@ const PixDonation = () => {
                 </button>
               </div>
             </div>
+             <div className="mt-6 text-center">
+              <p className="text-sm text-gray-600">
+                Recebedor:karolayne estefany Dos Santos
+              </p>
+            </div>
 
             {/* Instructions */}
             <div className="space-y-4 mb-8">
