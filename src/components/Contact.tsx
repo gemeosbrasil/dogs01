@@ -41,7 +41,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Telefone",
-      content: "(11) 99999-9999\n(11) 3333-3333\nWhatsApp disponível",
+      content: "(11) 99854-7887\n(11) 3322-4758\nWhatsApp disponível",
       color: "text-green-500"
     },
     {
@@ -53,7 +53,7 @@ const Contact = () => {
     {
       icon: Clock,
       title: "Horário de Funcionamento",
-      content: "Segunda a Sexta: 8h às 18h\nSábados: 8h às 14h\nDomingos: Apenas emergências",
+      content: "Segunda a Sexta: 8h às 21h\nSábados: 8h às 18:00h\nDomingos: Apenas emergências",
       color: "text-purple-500"
     }
   ];
@@ -61,7 +61,7 @@ const Contact = () => {
   const socialLinks = [
     { icon: Instagram, name: "Instagram", link: "@patascoracoes", color: "bg-pink-500 hover:bg-pink-600" },
     { icon: Facebook, name: "Facebook", link: "Patas & Corações ONG", color: "bg-blue-600 hover:bg-blue-700" },
-    { icon: MessageCircle, name: "WhatsApp", link: "(11) 99999-9999", color: "bg-green-500 hover:bg-green-600" }
+    { icon: MessageCircle, name: "WhatsApp", link: "(11) 99854-7887", color: "bg-green-500 hover:bg-green-600" }
   ];
 
   return (
@@ -240,10 +240,10 @@ const Contact = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
-                  href="tel:11999999999"
+                  href="tel:(11) 99854-7887"
                   className="bg-red-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-red-600 transition-all duration-300 text-center"
                 >
-                  📞 (11) 99999-9999
+                  📞 (11) 99854-7887
                 </a>
                 <button className="bg-red-100 text-red-700 px-6 py-3 rounded-full font-semibold hover:bg-red-200 transition-all duration-300">
                   💬 WhatsApp 24h
@@ -259,7 +259,7 @@ const Contact = () => {
             <div className="text-center">
               <MapPin className="h-12 w-12 text-gray-400 mx-auto mb-2" />
               <p className="text-gray-600 font-medium">Mapa de Localização</p>
-              <p className="text-sm text-gray-500">Rua das Flores, 123 - Jardim Esperança</p>
+              <p className="text-sm text-gray-500">Rua das Flores, 1876 - Jardim Esperança</p>
             </div>
           </div>
         </div>
