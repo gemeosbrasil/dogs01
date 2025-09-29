@@ -72,7 +72,7 @@ const Hero = () => {
                 20
               </div>
               <div className="text-sm text-gray-600">
-                anos resgatando e cuidando de vidas
+                Anos resgatando e cuidando de vidas
               </div>
             </div>
           </div>
