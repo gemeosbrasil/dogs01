@@ -3,8 +3,8 @@ import { Heart, Shield, Users, Award } from 'lucide-react';
 
 const AboutSection = () => {
   const stats = [
-    { number: "600+", label: "Animais atendidos em 2024", icon: Heart },
-    { number: "132", label: "Resgatados de canil clandestino", icon: Shield },
+    { number: "600+", label: "Animais atendidos em 2025", icon: Heart },
+    { number: "132", label: "Resgatados de canis clandestinos", icon: Shield },
     { number: "100%", label: "Transparência nas ações", icon: Award },
     { number: "24h", label: "Disponibilidade para emergências", icon: Users }
   ];
