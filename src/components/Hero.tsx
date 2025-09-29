@@ -35,7 +35,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-xl text-gray-600 leading-relaxed max-w-lg mt-6">
-            Fundado em 2005,nosso abrigo salva vidas todos os dias, mas está com dificuldades
+            Fundado pela tia Karol em 2005,nosso abrigo salva vidas todos os dias, mas está com dificuldades
             para manter o cuidado dos animais resgatados. Muitos dependem da sua
             ajuda urgente. Doe qualquer valor e transforme uma vida hoje!
           </p>
