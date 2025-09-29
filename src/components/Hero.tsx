@@ -62,7 +62,12 @@ const Hero = () => {
               </div>
               <div className="text-sm text-gray-600">Resgatados de Canis clandestinos</div>
             </div>
-          </div>
+          <div className="text-center">
+  <div className="text-2xl md:text-3xl font-bold text-purple-500">
+    20
+  </div>
+  <div className="text-sm text-gray-600">anos resgatando e cuidando de vidas</div>
+</div>
         </div>
 
         {/* Hero Image */}
