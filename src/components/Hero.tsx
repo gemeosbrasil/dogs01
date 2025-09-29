@@ -117,6 +117,46 @@ const Hero = () => {
             Nosso abrigo salva vidas todos os dias, mas está com dificuldades
             para manter o cuidado dos animais resgatados. Muitos dependem da sua
             ajuda urgente. Doe qualquer valor e transforme uma vida hoje!
+import React from "react";
+import { ArrowDown } from "lucide-react";
+
+const Hero = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  return (
+    <section
+      id="hero"
+      className="relative min-h-screen bg-gradient-to-br from-green-50 via-white to-blue-50 overflow-hidden flex items-center"
+    >
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-20 left-10 w-20 h-20 rounded-full bg-green-500"></div>
+        <div className="absolute top-40 right-20 w-16 h-16 rounded-full bg-blue-500"></div>
+        <div className="absolute bottom-20 left-1/4 w-12 h-12 rounded-full bg-green-500"></div>
+      </div>
+
+      {/* Conteúdo principal */}
+      <div className="container mx-auto px-4 py-20 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        {/* Texto */}
+        <div>
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-800 leading-tight">
+            Salve uma{" "}
+            <span className="bg-gradient-to-r from-green-500 to-green-700 bg-clip-text text-transparent">
+              vida
+            </span>
+            <br />
+            agora mesmo
+          </h1>
+
+          <p className="text-xl text-gray-600 leading-relaxed max-w-lg mt-6">
+            Nosso abrigo salva vidas todos os dias, mas está com dificuldades
+            para manter o cuidado dos animais resgatados. Muitos dependem da sua
+            ajuda urgente. Doe qualquer valor e transforme uma vida hoje!
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
