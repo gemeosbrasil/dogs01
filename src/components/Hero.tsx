@@ -77,6 +77,19 @@ const Hero = () => {
 
   return (
     <section
+import React from "react";
+import { ArrowDown } from "lucide-react";
+
+const Hero = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  return (
+    <section
       id="hero"
       className="relative min-h-screen bg-gradient-to-br from-green-50 via-white to-blue-50 overflow-hidden flex items-center"
     >
