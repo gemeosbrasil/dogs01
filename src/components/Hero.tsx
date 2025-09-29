@@ -36,7 +36,7 @@ const Hero = () => {
 
           <p className="text-xl text-gray-600 leading-relaxed max-w-lg mt-6">
             Nosso abrigo salva vidas todos os dias, mas está com dificuldades
-            para manter o idado dos animais resgatados. Muitos dependem da sua
+            para manter o cuidado dos animais resgatados. Muitos dependem da sua
             ajuda urgente. Doe qualquer valor e transforme uma vida hoje!
           </p>
 
@@ -50,7 +50,7 @@ const Hero = () => {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 border-t border-gray-200 mt-8">
+          <div className="grid grid-cols-3 sm:grid-cols-3 gap-6 pt-8 border-t border-gray-200 mt-8">
             <div className="text-center">
               <div className="text-2xl md:text-3xl font-bold text-green-500">
                 600+
