@@ -35,7 +35,7 @@ const AboutSection = () => {
 
               <div className="bg-green-50 p-6 rounded-2xl border-l-4 border-green-500">
                 <p className="font-semibold text-green-800">
-                  Já são mais 600 animais atendidos apenas entre junho e dezembro de 2024, em um dos anos mais difíceis 
+                  Já são mais 600 animais atendidos em 2025, um dos anos mais difíceis 
                   que já enfrentamos, com queda nas doações, enchentes e um acúmulo imenso de resgates emergenciais.
                 </p>
               </div>
@@ -45,11 +45,11 @@ const AboutSection = () => {
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    Resgatamos 132 animais de um canil clandestino, todos em estado crítico.
+                    Resgatamos 132 animais de canis clandestinos, todos em estado crítico.
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    Temos custos veterinários em 2025 que também precisam ser pagos.
+                    Temos custos veterinários em 2026 que também precisam ser pagos.
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
