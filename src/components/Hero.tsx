@@ -12,92 +12,55 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen bg-gradient-to-br from-green-50 via-white to-blue-50 overflow-hidden flex items-center"
+      className="relative h-screen w-full flex items-center justify-center bg-black"
     >
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 left-10 w-20 h-20 rounded-full bg-green-500"></div>
-        <div className="absolute top-40 right-20 w-16 h-16 rounded-full bg-blue-500"></div>
-        <div className="absolute bottom-20 left-1/4 w-12 h-12 rounded-full bg-green-500"></div>
-      </div>
+      {/* Vídeo de fundo */}
+      <video
+        className="absolute top-0 left-0 w-full h-full object-cover"
+        src="https://cdn.coverr.co/videos/coverr-working-with-a-dog-while-lying-on-the-grass-0062/1080p.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+      />
 
-      {/* Conteúdo principal */}
-      <div className="container mx-auto px-4 py-20 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-        {/* Texto */}
-        <div>
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-800 leading-tight">
-            Salve uma{" "}
-            <span className="bg-gradient-to-r from-green-500 to-green-700 bg-clip-text text-transparent">
-              vida
-            </span>
-            <br />
-            agora mesmo
+      {/* Overlay escuro para contraste */}
+      <div className="absolute inset-0 bg-black/60" />
+
+      {/* Conteúdo */}
+      <div className="relative z-10 max-w-6xl mx-auto px-6 text-white flex flex-col md:flex-row items-center justify-between gap-10">
+        
+        {/* Texto da esquerda */}
+        <div className="max-w-xl text-center md:text-left">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">
+            Amparo Animal
           </h1>
-
-          <p className="text-xl text-gray-600 leading-relaxed max-w-lg mt-6">
-            Nosso abrigo salva vidas todos os dias, mas está com dificuldades
-            para manter o cuidado dos animais resgatados. Muitos dependem da sua
-            ajuda urgente. Doe qualquer valor e transforme uma vida hoje!
+          <p className="text-lg md:text-xl mb-6">
+            Cuidando e protegendo nossos amigos de quatro patas com amor e dedicação.
           </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 mt-8">
-            <button
-              onClick={() => scrollToSection("pix")}
-              className="bg-gradient-to-r from-green-400 to-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-green-500 hover:to-green-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-            >
-              Doar via PIX
-            </button>
-          </div>
-
-          {/* Stats */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 border-t border-gray-200 mt-8">
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-green-500">
-                600+
-              </div>
-              <div className="text-sm text-gray-600">Animais Resgatados</div>
-            </div>
-
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-blue-500">
-                132
-              </div>
-              <div className="text-sm text-gray-600">
-                Resgatados de Canis clandestinos
-              </div>
-            </div>
-
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-purple-500">
-                20
-              </div>
-              <div className="text-sm text-gray-600">
-                anos resgatando e cuidando de vidas
-              </div>
-            </div>
-          </div>
+          <button
+            onClick={() => scrollToSection("about")}
+            className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-3 rounded-full font-semibold transition"
+          >
+            Saiba Mais <ArrowDown className="w-5 h-5" />
+          </button>
         </div>
 
-        {/* Hero Image */}
-        <div className="relative animate-fadeInRight">
-          <div className="relative rounded-2xl overflow-hidden shadow-2xl transition-all duration-500">
-            <img
-              src="https://i.imgur.com/eSoyc7c.png"
-              alt="Cachorro resgatado feliz"
-              className="w-full h-auto object-contain"
-            />
+        {/* Estatísticas (3 colunas sempre lado a lado) */}
+        <div className="grid grid-cols-3 gap-6 text-center w-full">
+          <div>
+            <h2 className="text-4xl font-bold">150+</h2>
+            <p className="text-sm">Animais Resgatados</p>
+          </div>
+          <div>
+            <h2 className="text-4xl font-bold">60+</h2>
+            <p className="text-sm">Nos Canis</p>
+          </div>
+          <div>
+            <h2 className="text-4xl font-bold">10+</h2>
+            <p className="text-sm">Anos de História</p>
           </div>
         </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <button
-          onClick={() => scrollToSection("animals")}
-          className="bg-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-        >
-          <ArrowDown className="h-6 w-6 text-gray-600" />
-        </button>
       </div>
     </section>
   );
