@@ -36,7 +36,7 @@ const Hero = () => {
 
           <p className="text-xl text-gray-600 leading-relaxed max-w-lg mt-6">
             Nosso abrigo salva vidas todos os dias, mas está com dificuldades
-            para manter o cuidado dos animais resgatados. Muitos dependem da sua
+            para manter o idado dos animais resgatados. Muitos dependem da sua
             ajuda urgente. Doe qualquer valor e transforme uma vida hoje!
           </p>
 
